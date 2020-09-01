@@ -1,0 +1,17 @@
+<header id="header">
+    <h1><a href="#/home" style="color: white;">MyBlog</a></h1>
+    {{#if isLoggedIn}}
+    <h2>Welcome <span>{{username}}</span>!</h2>
+    {{/if}}
+    <nav id="nav">
+        <ul>
+            {{#if isLoggedIn}}
+            <li><a href="#/user/logout">Logout</a></li>
+            {{else}}
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/user/login">Login</a></li>
+            <li><a href="#/user/register">Register</a></li>
+            {{/if}}
+        </ul>
+    </nav>
+</header>
