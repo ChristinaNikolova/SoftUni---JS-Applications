@@ -1,0 +1,18 @@
+{{> header}}
+<h1>Login</h1>
+<p class="form-info">Don't have account?
+    <a href="#/user/register">Register now</a> and fix that!
+</p>
+<form action="#/user/login" method="POST">
+    <div>
+        <input name="email" type="email" placeholder="Email...">
+    </div>
+
+    <div>
+        <input name="password" type="password" placeholder="Password...">
+    </div>
+    <div>
+        <button>Login</button>
+    </div>
+</form>
+{{> footer}}

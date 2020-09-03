@@ -1,0 +1,24 @@
+{{> header}}
+<h1>Create New Offer</h1>
+<p class="message"></p>
+<form action="#/offer/create" method="POST">
+    <div>
+        <input name="name" type="text" placeholder="Name...">
+    </div>
+    <div>
+        <input name="price" type="text" placeholder="Price...">
+    </div>
+    <div>
+        <input name="imageURL" type="text" placeholder="Image url...">
+    </div>
+    <div>
+        <textarea name="description" placeholder="Give us some description about this offer..."></textarea>
+    </div>
+    <div>
+        <input name="brand" type="text" placeholder="Brand...">
+    </div>
+    <div>
+        <button>Create</button>
+    </div>
+</form>
+{{> footer}}
